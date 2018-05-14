@@ -4,19 +4,20 @@ height: 100vh;
 padding-right: 0px !important;
 padding-left: 0px !important;
 }
-.greenTwo{
-background-color:#202020;
-height: 100vh;
-margin-right: 0px !important;
-margin-left: 0px !important;    
-}
 .color{
 padding-right: 0px !important;
 padding-left: 0px !important;
 }
 .curve{
-transition: all 1.0s cubic-bezier(0.75, 0.25, 0.18, 0.82)
+transition: all 1.0s cubic-bezier(0.75, 0.25, 0.18, 0.82)!important;
 }
 .curveTwo{
-transition: all 1.2s cubic-bezier(0.75, 0.25, 0.25, 0.75)
+transition: all 1.2s cubic-bezier(0.75, 0.25, 0.25, 0.75)!important;
 }
+.projectImg{
+height: 65vh;
+width: 100%;
+}
+/* .zoom{
+transform: scale(1.5)
+} */

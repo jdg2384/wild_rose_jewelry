@@ -1,5 +1,6 @@
 .header { 
-background-color: #202020;
+background-image: url("../../Images/bg.jpg");
+/* background-color: #202020; */
 -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
@@ -7,6 +8,61 @@ background-size: cover;
 height: 100vh;
 color: #fff;
 }
-.headerHat{
-margin-top: 250px;
+.fontBackG{
+width: 70%;
+margin-bottom: 20px; 
+background-color: rgba(0, 194, 203, .8);
+margin:auto;
+/* rgba(0, 194, 203, 1)  */
+}
+.River{
+margin-top:20px;
+margin-bottom:0px;
+height: 470px;
+}
+.grad{
+height: 100vh;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.73+28,0+100 */
+background: -moz-linear-gradient(left, rgba(0,0,0,0.73) 0%, rgba(0,0,0,0.73) 28%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, rgba(0,0,0,0.73) 0%,rgba(0,0,0,0.73) 28%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, rgba(0,0,0,0.73) 0%,rgba(0,0,0,0.73) 28%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ba000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+}
+
+/* Media Queries */
+
+@media all and (max-width: 1690px) { 
+    .River{
+    height: 600px;
+    margin-top:100px;
+    margin-bottom:0px;
+    }
+}
+@media all and (max-width: 1280px) { 
+    .River{
+    margin-top:50px;
+    margin-bottom:0px;
+    height: 570px;
+    }    
+}
+@media all and (max-width: 980px) { 
+    .River{
+    height: 380px;
+    margin-top:50px;
+    margin-bottom:0px;
+    }
+}
+@media all and (max-width: 768px) { 
+    .River{
+    height: 380px;
+    margin-top:40px;
+    margin-bottom:0px;
+    }
+}
+@media all and (max-width: 480px) { 
+    .River{
+    margin-top:60px;
+    margin-bottom:0px;
+    height: 350px;
+    }
 }

@@ -7,6 +7,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap-theme.css';
 import 'font-awesome/css/font-awesome.css';
 import './project.css';
+import '../Common/common.css';
 //Images
 import hat from '../../Images/hat.svg';
 // Redux Actions
@@ -14,45 +15,52 @@ import {
     projectInfo,
     toggle
 } from '../../Actions';
+// Router
+import {
+    BrowserRouter as Router,
+    Route,
+    Link,
+    Redirect,
+    withRouter
+} from "react-router-dom";
+
 class Project extends Component {
+    
     componentDidMount() {
         this.props.projectInfo()
-        this.props.toggle()
     }
+    
     renderList=()=>{
         let projectData = this.props.info;
         let reducerToggle = this.props.reducerToggle
         if(!projectData || !reducerToggle === null){return <div>Loading...</div>}
         else{
-            //console.log('props else ',this.props.reducerToggle)
             return (
                 <div>
-                    <div 
-                        className={
-                            reducerToggle ? "col-md-3 text-center green curve" 
-                            : "col-md-6 text-center green curveTwo"
-                        }
-                    >
-                        <Sticky bottomBoundary={4854}>
-                        {/* <div className="container-fluid">
-                            <div className="row"> */}
-                                <div className={"text-center greenTwo curve"}> 
-                                    <img src={hat} className="hat" alt={'hat Svg'} />
-                                </div>
-                            {/* </div>
-                            </div> */}
+                    <div className="col-md-6 green text-center curveTwo">
+                        <Sticky bottomBoundary={4266}>
+                            <div className="col-md-12 text-center green curve"> 
+                                <img src={hat} className=" text-center hat" alt={'hat Svg'} />
+                            </div>
                         </Sticky>
                     </div>
-                    <div className={reducerToggle ? "col-md-9 text-center curve color" : "col-md-6 text-center curveTwo color"}>
+                    <div className={reducerToggle ? "col-md-9 testMargin text-center curve color" : "col-md-6 text-center curveTwo color"}>
                         { this.props.info.map(item => {
                             return (
-                                <div 
-                                    onClick={()=> this.props.toggle(!reducerToggle)}
-                                    key={item.id}
-                                    className="picture" 
-                                    style={{backgroundImage: "url(" + item.image + ")", height:600, width: '100%'}}
-                                >
-                                </div>
+                                <Link to={`/projectDetail/${item.title}/${item.id}`}>
+                                    <img src={item.image} className="text-center projectImg" alt={'hat Svg'}/>
+                                    {/* <div key={item.id}>
+                                        <div 
+                                            id={item.id}
+                                            //onClick={()=> this.props.toggle(!reducerToggle)}
+                                            //onClick={()=> this.props.toggle({prop:item.title, value: !this.props.Dateify })}
+                                            key={item.id}
+                                            className="picture" 
+                                            style={{backgroundImage: "url(" + item.image + ")", height:'100vh', width: '100%'}}
+                                        >
+                                        </div>
+                                    </div> */}
+                                </Link>
                             )
                         })}
                     </div>
@@ -74,11 +82,15 @@ class Project extends Component {
     }
 }
 const mapStateToProps = state => {
-    let { info, reducerToggle } = state.projects
-    
+    let { info, Dateify, Hoist, testOne, testTwo , reducerToggle } = state.projects
+    //console.log(state.projects)
     return { 
        info,
-       reducerToggle,
+       Dateify, 
+       Hoist, 
+       testOne, 
+       testTwo,
+       reducerToggle
     };
 };
 export default connect(mapStateToProps, {

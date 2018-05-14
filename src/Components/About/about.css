@@ -1,14 +1,12 @@
 .white {
 height: 100%;
 background-color: #ECE9E1;
-padding: 120px;
-}
-.test{
-    position: absolute;
+padding: 100px;
 }
 .blue {
+background-color: #585858;
 height: 100vh;
-background-color:#353F4F;
+/* background-color:#353F4F; */
 padding: 0px;
 }
 .hat{
@@ -23,9 +21,29 @@ height: 270px;
 border-radius: 50%;
 border: 3px solid #353F4F;
 }
-.hr{
-    margin-top: 20px !important;
-    margin-bottom: 20px;
-    border: 0;
-    border-top: 1px solid rgb(158, 21, 21) !important;
+/* Media */
+@media all and (max-width: 1690px) { 
+    .white {
+    padding: 70px;
+    }
+}
+@media all and (max-width: 1280px) { 
+    .white {
+    padding: 70px;
+    }
+}
+@media all and (max-width: 980px) { 
+    .white {
+    padding: 70px;
+    }
+}
+@media all and (max-width: 768px) { 
+    .white {
+    padding: 70px;
+    }
+}
+@media all and (max-width: 480px) { 
+    .white {
+    padding: 70px;
+    }
 }

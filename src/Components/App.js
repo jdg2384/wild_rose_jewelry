@@ -1,13 +1,23 @@
 import React, { Component } from 'react';
-// import logo from './logo.svg';
+// Router
+import {
+    BrowserRouter as Router,
+    Route,
+    Link,
+    Redirect,
+    withRouter
+} from "react-router-dom";
 import './App.css';
 import Body from './Body/Body.js';
+import ProjectDetail from './ProjectDetail/ProjectDetail.js';
+
 
 class App extends Component {
     render() {
         return (
             <div className="App">
-                <Body/>
+                <Route exact path="/" component={Body}/>
+                <Route path="/projectDetail" component={ProjectDetail} />
             </div>
         );
     }

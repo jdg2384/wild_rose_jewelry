@@ -16,17 +16,15 @@ class About extends Component {
     render() {
         return (
             <div>
-                
-                <div className="container-fluid">
+                <div id="about" className="container-fluid">
                     <div className="row">
-                            <div className="col-md-6 blue">
-                                <Sticky  bottomBoundary={1640}>
-                                    <div className="col-md-12 blue test"> 
-                                        <img src={hat} className="hat" alt={'hat Svg'}/>
-                                    </div>
-                                </Sticky>
-                            </div>
-                            
+                        <div className="col-md-6 blue">
+                            <Sticky bottomBoundary={1652}>
+                                <div className="col-md-12 blue test"> 
+                                    <img src={hat} className="hat" alt={'hat Svg'}/>
+                                </div>
+                            </Sticky>
+                        </div>
                         <div className="col-md-6 white ">
                             <img src={me} className="me" alt={'me'}/>
                             <h3>Joseph Grounds</h3>

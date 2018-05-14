@@ -14,10 +14,10 @@ class Footer extends Component {
     render() {
         return (
             <div>
-                <div>
+                <div id="footer">
                     <Sticky>
                         <footer>
-                            <img src={fish} className="fishFooter" alt={'fish'}/> 
+                            {/* <img src={fish} className="fishFooter img-responsive" alt={'fish'}/>  */}
                         </footer>
                     </Sticky>
                 </div>

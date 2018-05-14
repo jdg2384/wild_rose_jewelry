@@ -47,3 +47,12 @@ border: 3px solid #353F4F;
     padding: 70px;
     }
 }
+@media all and (max-width: 400px) { 
+    .white {
+    padding: 30px;
+    }
+    .blue {
+    height: 40vh;
+    position: absolute;
+    }    
+}

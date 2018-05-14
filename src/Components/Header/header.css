@@ -66,3 +66,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ba000000', e
     height: 350px;
     }
 }
+@media all and (max-width: 280px) { 
+    .River{
+    margin-top:60px;
+    margin-bottom:0px;
+    height: 350px;
+    }
+}

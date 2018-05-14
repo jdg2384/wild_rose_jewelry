@@ -3,8 +3,8 @@ import {
   PROJECTINFO,
   TOGGLE
 } from './types';
-const api = 'http://localhost:3001/api'
-//const api = 'https://dp-dash.herokuapp.com/seed_deals'
+//const api = 'http://localhost:3001/api'
+const api = 'https://peaceful-tor-89083.herokuapp.com/api'
 export const projectInfo = () => {
     return (dispatch) => {
         axios.get(`${api}`)

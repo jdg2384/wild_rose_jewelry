@@ -38,7 +38,7 @@ class ProjectDetail extends Component {
                     if(projectId===item.id){
                         return(
                             <div key={item.id}>
-                                <div className="container">
+                                <div className="container-fluid noPadding">
                                     <div className="row">
                                         <div className="col-md-12">
                                             <img src={item.image} className="text-center projectImage" alt={'hat Svg'}/>
@@ -46,11 +46,11 @@ class ProjectDetail extends Component {
                                         <div className="col-md-12">
                                             <h1>{item.title}</h1>
                                         </div>
-                                        <div className="col-md-6">
-                                            <h3>{item.description}</h3>
+                                        <div className="col-md-6 description">
+                                            <h2>{item.description}</h2>
                                         </div>
-                                        <div className="col-md-6">
-                                            <h1>{item.title}</h1>
+                                        <div className="col-md-6 bullets">
+                                            <h3>{item.title}</h3>
                                         </div>
                                         <div className="col-md-12">
                                             <img src={item.image_two} className="text-center projectImage" alt={'hat Svg'}/>

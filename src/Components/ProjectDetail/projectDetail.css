@@ -1,3 +1,17 @@
 .projectImage{
-width: 100%;
+width: 100vw;
+}
+.description{
+    height: 65vh;
+background-color: #585858;
+padding: 40px;
+margin-bottom: 15px;
+}
+.bullets{
+height: 65vh;
+background-color: #ECE9E1;    
+}
+.noPadding{
+padding-left: 0px !important;
+padding-right: 0px !important;
 }

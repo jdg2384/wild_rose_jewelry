@@ -53,11 +53,7 @@ border: 3px solid #353F4F;
     }
     .blue {
     position: absolute;
-    } 
-    .me{
-    width: 200px;
-    height: 200px;
-    }   
+    }    
 }
 @media all and (max-width: 320px) { 
     .white {

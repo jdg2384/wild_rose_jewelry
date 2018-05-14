@@ -47,9 +47,18 @@ border: 3px solid #353F4F;
     padding: 70px;
     }
 }
-@media all and (max-width: 400px) { 
+@media all and (max-width: 360px) { 
     .white {
     padding: 30px;
+    }
+    .blue {
+    height: 40vh;
+    position: absolute;
+    }    
+}
+@media all and (max-width: 320px) { 
+    .white {
+    padding: 10px;
     }
     .blue {
     height: 40vh;

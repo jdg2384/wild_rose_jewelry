@@ -24,9 +24,7 @@ transform: scale(1.5)
 /* Media */
 
 @media all and (max-width: 1690px) { 
-    .white {
-    padding: 70px;
-    }
+
 }
 @media all and (max-width: 1280px) { 
     

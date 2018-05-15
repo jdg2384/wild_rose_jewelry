@@ -1,8 +1,12 @@
 .projectImage{
-width: 100vw;
+height: 100vh;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
 }
 .description{
-    height: 65vh;
+height: 65vh;
 background-color: #585858;
 padding: 40px;
 margin-bottom: 15px;

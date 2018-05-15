@@ -9,7 +9,7 @@ import 'font-awesome/css/font-awesome.css';
 import './about.css';
 import '../Common/common.css';
 //Images
-import hat from '../../Images/hat.svg';
+import hat from '../../Images/hat.png';
 import me from '../../Images/pic.jpg';
 class About extends Component {
     
@@ -18,10 +18,11 @@ class About extends Component {
             <div>
                 <div id="about" className="container-fluid">
                     <div className="row">
-                        <div className="col-md-6 blue">
+                        <div className="col-md-6 blueParent">
                             <Sticky bottomBoundary={1652}>
                                 <div className="col-md-12 blue test"> 
                                     <img src={hat} className="hat" alt={'hat Svg'}/>
+                                    <h2>About</h2>
                                 </div>
                             </Sticky>
                         </div>

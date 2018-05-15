@@ -2,15 +2,30 @@
 height: 100%;
 background-color: #ECE9E1;
 padding: 100px;
+border-top: 10px solid;
+border-right: 10px solid;
+border-left: 5px solid;
+border-color: #fff;
 }
 .blue {
 background-color: #585858;
 height: 100vh;
+padding: 0px;
+/* background-color:#353F4F; */
+}
+.blueParent {
+background-color: #585858;
+height: 100vh;
 /* background-color:#353F4F; */
 padding: 0px;
+border-top: 10px solid;
+border-right: 10px solid;
+border-left: 10px solid;
+border-color: #fff;
 }
 .hat{
-height: 100%;
+margin-top: 200px;
+margin-bottom: 20px;
 width: 200px;
 }
 .me{

@@ -37,14 +37,14 @@ class Project extends Component {
         else{
             return (
                 <div>
-                    <div className="col-md-6 green text-center curveTwo">
-                        <Sticky bottomBoundary={4266}>
+                    <div className="col-md-6 greenParent text-center curveTwo">
+                        <Sticky bottomBoundary={3444}>
                             <div className="col-md-12 text-center green curve"> 
                                 <img src={hat} className=" text-center hat" alt={'hat Svg'} />
                             </div>
                         </Sticky>
                     </div>
-                    <div className={reducerToggle ? "col-md-9 testMargin text-center curve color" : "col-md-6 text-center curveTwo color"}>
+                    <div className="col-md-6 projectBorder text-center curveTwo color">
                         { this.props.info.map(item => {
                             return (
                                 <Link to={`/projectDetail/${item.title}/${item.id}`}>

@@ -3,6 +3,25 @@ background-color:#202020;
 height: 100vh;
 padding-right: 0px !important;
 padding-left: 0px !important;
+border-bottom: 10px solid;
+border-color:#fff;
+}
+.greenParent{
+background-color:#202020;
+height: 100vh;
+padding-right: 0px !important;
+padding-left: 0px !important;
+border-top: 10px solid;
+border-bottom: 10px solid;
+border-right: 10px solid;
+border-left: 10px solid;
+border-color:#fff;
+}
+.projectBorder{
+border-top: 10px solid;
+border-right: 10px solid;
+border-left: 5px solid;
+border-color: #fff;
 }
 .color{
 padding-right: 0px !important;
@@ -15,6 +34,8 @@ transition: all 1.0s cubic-bezier(0.75, 0.25, 0.18, 0.82)!important;
 transition: all 1.2s cubic-bezier(0.75, 0.25, 0.25, 0.75)!important;
 }
 .projectImg{
+border-bottom: 10px solid;
+border-color: #fff;
 height: 65vh;
 width: 100%;
 }

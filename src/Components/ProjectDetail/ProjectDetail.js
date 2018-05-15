@@ -41,7 +41,7 @@ class ProjectDetail extends Component {
                                 <div className="container-fluid noPadding">
                                     <div className="row">
                                         <div className="col-md-12">
-                                            <img src={item.image} className="text-center projectImage" alt={'hat Svg'}/>
+                                            <img src={item.image} className="text-center projectImage" alt={item.title}/>
                                         </div>
                                         <div className="col-md-12">
                                             <h1>{item.title}</h1>

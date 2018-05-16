@@ -15,14 +15,13 @@ class Header extends Component {
                 <div id="header" className="header">
                     <div className="container-fluid">
                         <div className="row">
-                            <div className="grad col-md-6 text-center">
-                                <img src={River} className="River" alt={'River'}/> 
+                            <div className="col-md-6 grad text-center">
+                                <img src={River} className="River text-center img-responsive" alt={'River'}/> 
                                 <h1 className="fontBackG">Joseph</h1>
                                 <br/>
                                 <h1 className="fontBackG">Grounds</h1>   
                             </div>
-                            <div className="col-md-6"> 
-                            </div>
+                            <div className="col-md-6"></div>
                         </div>
                     </div>
                 </div>

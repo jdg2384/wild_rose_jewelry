@@ -41,6 +41,7 @@ class Project extends Component {
                         <Sticky bottomBoundary={3444}>
                             <div className="col-md-12 text-center green curve"> 
                                 <img src={hat} className=" text-center hat" alt={'hat Svg'} />
+                                <h2 className="h2Backgrounds">Portfolio</h2>
                             </div>
                         </Sticky>
                     </div>

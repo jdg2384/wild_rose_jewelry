@@ -1,6 +1,5 @@
 // Redux Imports
 import React, { Component } from 'react';
-//import { connect } from 'react-redux';
 import Sticky from 'react-stickynode';
 // CSS
 import 'bootstrap/dist/css/bootstrap.css';
@@ -10,7 +9,7 @@ import './about.css';
 import '../Common/common.css';
 //Images
 import hat from '../../Images/hat.png';
-import me from '../../Images/pic.jpg';
+import me from '../../Images/fish.png';
 class About extends Component {
     
     render() {
@@ -22,14 +21,13 @@ class About extends Component {
                             <Sticky bottomBoundary={1652}>
                                 <div className="col-md-12 blue test"> 
                                     <img src={hat} className="hat" alt={'hat Svg'}/>
-                                    <h2>About</h2>
+                                    <h2 className="h2Backgrounds">About</h2>
                                 </div>
                             </Sticky>
                         </div>
                         <div className="col-md-6 white ">
                             <img src={me} className="me" alt={'me'}/>
                             <h3>Joseph Grounds</h3>
-    
                             <h4 className="text-left">
                                 Software Engineer living in Boulder, Colorado. Huge music lover, 
                                 can't get enough Folk, Bluegrass, and Rock!! I love backpacking 
@@ -77,5 +75,4 @@ class About extends Component {
         );
     }
 }
-
 export default About;

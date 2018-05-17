@@ -1,9 +1,5 @@
 .projectImage{
-height: 100vh;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
+width: 100vw;
 }
 .description{
 height: 65vh;
@@ -13,6 +9,7 @@ margin-bottom: 15px;
 }
 .bullets{
 height: 65vh;
+padding: 40px;
 background-color: #ECE9E1;    
 }
 .noPadding{

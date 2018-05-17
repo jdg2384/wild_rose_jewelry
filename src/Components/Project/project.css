@@ -27,12 +27,6 @@ border-color: #fff;
 padding-right: 0px !important;
 padding-left: 0px !important;
 }
-.curve{
-transition: all 1.0s cubic-bezier(0.75, 0.25, 0.18, 0.82)!important;
-}
-.curveTwo{
-transition: all 1.2s cubic-bezier(0.75, 0.25, 0.25, 0.75)!important;
-}
 .projectImg{
 border-bottom: 10px solid;
 border-color: #fff;
@@ -42,9 +36,12 @@ width: 100%;
 /* .zoom{
 transform: scale(1.5)
 } */
+
+
+
 /* Media */
 
-@media all and (max-width: 1690px) { 
+/* @media all and (max-width: 1690px) { 
 
 }
 @media all and (max-width: 1280px) { 
@@ -68,4 +65,4 @@ transform: scale(1.5)
     .green{
         position: absolute;
     }  
-}
+} */

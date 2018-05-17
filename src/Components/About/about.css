@@ -30,7 +30,15 @@ width: 200px;
 }
 .me{
 margin-top:40px;
+margin-left:auto;
+margin-right:auto;
 width: 370px;
+}
+.reel{
+margin-top:40px;
+margin-left:auto;
+margin-right:auto;
+width: 150px;
 }
 /* Media */
 @media all and (max-width: 1690px) { 

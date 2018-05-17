@@ -50,17 +50,6 @@ class Project extends Component {
                             return (
                                 <Link to={`/projectDetail/${item.title}/${item.id}`}>
                                     <img src={item.image} className="text-center projectImg" alt={'hat Svg'}/>
-                                    {/* <div key={item.id}>
-                                        <div 
-                                            id={item.id}
-                                            //onClick={()=> this.props.toggle(!reducerToggle)}
-                                            //onClick={()=> this.props.toggle({prop:item.title, value: !this.props.Dateify })}
-                                            key={item.id}
-                                            className="picture" 
-                                            style={{backgroundImage: "url(" + item.image + ")", height:'100vh', width: '100%'}}
-                                        >
-                                        </div>
-                                    </div> */}
                                 </Link>
                             )
                         })}

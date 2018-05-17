@@ -12,13 +12,7 @@ import {
     projectInfo,
 } from '../../Actions';
 // Router
-import {
-    BrowserRouter as Router,
-    Route,
-    Link,
-    Redirect,
-    withRouter
-} from "react-router-dom";
+
 
 class ProjectDetail extends Component {
     componentDidMount() {
@@ -33,27 +27,49 @@ class ProjectDetail extends Component {
         else{
             return(
                 this.props.info.map(item => {
-                    //console.log('image',item)
-                    console.log('Props',this.props)
+                    let url = item.url.split(', ')
+                    console.log('Props',url)
                     if(projectId===item.id){
                         return(
                             <div key={item.id}>
-                                <div className="container-fluid noPadding">
+                                <div className="container noPadding">
                                     <div className="row">
                                         <div className="col-md-12">
-                                            <img src={item.image} className="text-center projectImage" alt={item.title}/>
+                                            <img src={item.image} style={{backgroundImage: "url(" + item.image + ")", height:'100vh', width: '100%'}} className="text-center" alt={item.title}/>
                                         </div>
                                         <div className="col-md-12">
                                             <h1>{item.title}</h1>
                                         </div>
+                                    </div>
+                                </div>
+                                <div className="container">
+                                    <div className="row">
                                         <div className="col-md-6 description">
                                             <h2>{item.description}</h2>
                                         </div>
                                         <div className="col-md-6 bullets">
-                                            <h3>{item.title}</h3>
+                                            <h2>Tech Used</h2>
+                                            <h3>{item.tech}</h3>
+                                        </div>    
+                                    </div>
+                                </div>
+                                <div className="container">
+                                    <div className="row">
+                                        <div className="col-md-6 description">
+                                            <h2>{url}</h2>
+                                            <a target='blank' href={item.url}>
+                                                <i className="fab fa-github-square"></i>
+                                            </a>
                                         </div>
+                                        <div className="col-md-6 bullets">
+                                        <img src={item.image_two} style={{backgroundImage: "url(" + item.image + ")", height:'100%', width: '100%'}} className="text-center" alt={item.title}/>
+                                        </div>    
+                                    </div>
+                                </div>
+                                <div className="container noPadding">
+                                    <div className="row">
                                         <div className="col-md-12">
-                                            <img src={item.image_two} className="text-center projectImage" alt={'hat Svg'}/>
+                                            <img src={item.image_three} style={{backgroundImage: "url(" + item.image + ")", height:'100vh', width: '100%'}} className="text-center" alt={item.title}/>
                                         </div>
                                     </div>
                                 </div>
@@ -83,4 +99,3 @@ const mapStateToProps = state => {
 export default connect(mapStateToProps, {
     projectInfo,
 })(ProjectDetail);
-

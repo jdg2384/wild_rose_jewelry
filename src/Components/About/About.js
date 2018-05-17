@@ -10,6 +10,7 @@ import '../Common/common.css';
 //Images
 import hat from '../../Images/hat.png';
 import me from '../../Images/fish.png';
+import reel from '../../Images/reel.png';
 class About extends Component {
     
     render() {
@@ -25,8 +26,8 @@ class About extends Component {
                                 </div>
                             </Sticky>
                         </div>
-                        <div className="col-md-6 white ">
-                            <img src={me} className="me" alt={'me'}/>
+                        <div className="col-md-6 white text-center ">
+                            <img src={me} className="me img-responsive" alt={'me'}/>
                             <h3>Joseph Grounds</h3>
                             <h4 className="text-left">
                                 Software Engineer living in Boulder, Colorado. Huge music lover, 
@@ -37,6 +38,7 @@ class About extends Component {
                                 were my gateway to the creative industry, which led me to Galvanize and the 
                                 digital world.
                             </h4>
+                            <img src={reel} className="reel img-responsive" alt={'reel'}/>
                             <h3>Full Stack Developer</h3>
                             <h4 className="text-left">A user-centered mindset and sensitivity for design turned out to be the perfect 
                                 fit when collaborating with agencies, clients and brands to develop digital concepts and solve problems together. 

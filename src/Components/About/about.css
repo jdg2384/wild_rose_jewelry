@@ -40,6 +40,12 @@ margin-left:auto;
 margin-right:auto;
 width: 150px;
 }
+.fly{
+margin-top:40px;
+margin-left:auto;
+margin-right:auto;
+width: 150px;
+}
 /* Media */
 @media all and (max-width: 1690px) { 
     .white {

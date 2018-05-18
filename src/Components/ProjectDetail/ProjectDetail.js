@@ -6,7 +6,9 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap-theme.css';
 import 'font-awesome/css/font-awesome.css';
 import './projectDetail.css';
-import '../Common/common.css'
+import '../Common/common.css';
+//Component
+import Footer from '../Footer/Footer';
 // Actions
 import {
     projectInfo,
@@ -27,8 +29,7 @@ class ProjectDetail extends Component {
         else{
             return(
                 this.props.info.map(item => {
-                    let url = item.url.split(', ')
-                    console.log('Props',url)
+                    console.log('Props',this.props)
                     if(projectId===item.id){
                         return(
                             <div key={item.id}>
@@ -48,20 +49,20 @@ class ProjectDetail extends Component {
                                             <h2>{item.description}</h2>
                                         </div>
                                         <div className="col-md-6 bullets">
-                                            <h2>Tech Used</h2>
+                                            <h2 style={{color:'#585858',}}>Tech Used</h2>
                                             <h3>{item.tech}</h3>
                                         </div>    
                                     </div>
                                 </div>
                                 <div className="container">
                                     <div className="row">
-                                        <div className="col-md-6 description">
-                                            <h2>{url}</h2>
+                                        <div className="col-md-6 gitHubBack">
+                                            <h2>Github</h2>
                                             <a target='blank' href={item.url}>
                                                 <i className="fab fa-github-square"></i>
                                             </a>
                                         </div>
-                                        <div className="col-md-6 bullets">
+                                        <div className="col-md-6 description">
                                         <img src={item.image_two} style={{backgroundImage: "url(" + item.image + ")", height:'100%', width: '100%'}} className="text-center" alt={item.title}/>
                                         </div>    
                                     </div>
@@ -73,7 +74,9 @@ class ProjectDetail extends Component {
                                         </div>
                                     </div>
                                 </div>
+                                <Footer/>
                             </div>
+                            
                         ) 
                     }
                 })  

@@ -12,6 +12,7 @@ import '../Common/common.css';
 import hat from '../../Images/hat.png';
 import me from '../../Images/fish.png';
 import reel from '../../Images/reel.png';
+import fly from '../../Images/fly.png';
 class About extends Component {
     
     render() {
@@ -45,6 +46,7 @@ class About extends Component {
                                 fit when collaborating with agencies, clients and brands to develop digital concepts and solve problems together. 
                                 This rough framework outlines my process of developing digital experiences:
                             </h4>
+                            <img src={fly} className="fly img-responsive" alt={'fly'}/>
                             <h3>Languages | Frameworks | Libraries</h3>
     
                             <table className="table">

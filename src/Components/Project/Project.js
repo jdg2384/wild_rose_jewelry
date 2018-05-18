@@ -1,7 +1,8 @@
 // Redux Imports
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import Sticky from 'react-stickynode';
+//import Sticky from 'react-stickynode';
+import Sticky from 'react-sticky-el';
 // CSS
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap-theme.css';
@@ -25,7 +26,7 @@ import {
 } from "react-router-dom";
 
 class Project extends Component {
-    
+
     componentDidMount() {
         this.props.projectInfo()
     }
@@ -38,7 +39,7 @@ class Project extends Component {
             return (
                 <div>
                     <div className="col-md-6 greenParent text-center curveTwo">
-                        <Sticky bottomBoundary={3444}>
+                        <Sticky>
                             <div className="col-md-12 text-center green curve"> 
                                 <img src={hat} className=" text-center hat" alt={'hat Svg'} />
                                 <h2 className="h2Backgrounds">Portfolio</h2>
@@ -59,6 +60,7 @@ class Project extends Component {
         }
     }
     render() {
+        //console.log('sticky',Sticky)
         return (
             <div>
                 <div className="container-fluid">
@@ -67,7 +69,6 @@ class Project extends Component {
                     </div>
                 </div>
             </div>
-
         );
     }
 }

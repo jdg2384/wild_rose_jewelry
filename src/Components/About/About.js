@@ -1,6 +1,7 @@
 // Redux Imports
 import React, { Component } from 'react';
-import Sticky from 'react-stickynode';
+//import Sticky from 'react-stickynode';
+import Sticky from 'react-sticky-el';
 // CSS
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap-theme.css';
@@ -19,7 +20,7 @@ class About extends Component {
                 <div id="about" className="container-fluid">
                     <div className="row">
                         <div className="col-md-6 blueParent">
-                            <Sticky bottomBoundary={1652}>
+                            <Sticky>
                                 <div className="col-md-12 blue test"> 
                                     <img src={hat} className="hat" alt={'hat Svg'}/>
                                     <h2 className="h2Backgrounds">About</h2>

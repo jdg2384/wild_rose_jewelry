@@ -1,7 +1,8 @@
 // Redux Imports
 import React, { Component } from 'react';
 //import { connect } from 'react-redux';
-import Sticky from 'react-stickynode';
+//import Sticky from 'react-stickynode';
+import Sticky from 'react-sticky-el';
 // CSS
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap-theme.css';

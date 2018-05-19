@@ -13,7 +13,10 @@ margin-top: 300px;
 }
 .fishFooter {
 animation: fishFooter-spin infinite 20s linear;
-
+}
+.noMargin{
+margin-left: 0px !important;
+margin-right: 0px !important;
 }
 
 @keyframes fishFooter-spin {

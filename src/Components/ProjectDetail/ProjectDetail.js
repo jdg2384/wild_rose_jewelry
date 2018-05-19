@@ -33,17 +33,17 @@ class ProjectDetail extends Component {
                     if(projectId===item.id){
                         return(
                             <div key={item.id}>
-                                <div className="container noPadding">
+                                <div className="container-fluid ">
                                     <div className="row">
-                                        <div className="col-md-12">
+                                        <div className="col-md-12 noPadding">
                                             <img src={item.image} style={{backgroundImage: "url(" + item.image + ")", height:'100vh', width: '100%'}} className="text-center" alt={item.title}/>
                                         </div>
-                                        <div className="col-md-12">
+                                        <div className="col-md-12 ">
                                             <h1>{item.title}</h1>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="container">
+                                <div className="container-fluid ">
                                     <div className="row">
                                         <div className="col-md-6 description">
                                             <h2>{item.description}</h2>
@@ -54,7 +54,7 @@ class ProjectDetail extends Component {
                                         </div>    
                                     </div>
                                 </div>
-                                <div className="container">
+                                <div className="container-fluid">
                                     <div className="row">
                                         <div className="col-md-6 gitHubBack">
                                             <h2>Github</h2>
@@ -67,9 +67,9 @@ class ProjectDetail extends Component {
                                         </div>    
                                     </div>
                                 </div>
-                                <div className="container noPadding">
+                                <div className="container-fluid ">
                                     <div className="row">
-                                        <div className="col-md-12">
+                                        <div className="col-md-12 noPadding">
                                             <img src={item.image_three} style={{backgroundImage: "url(" + item.image + ")", height:'100vh', width: '100%'}} className="text-center" alt={item.title}/>
                                         </div>
                                     </div>

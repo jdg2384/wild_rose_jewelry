@@ -51,22 +51,43 @@ font-size: 18px !important;
 }
 @media all and (max-width: 480px) { 
     h1{
-    font-size: 50px !important;  
-    }  
+    font-size: 40px !important;  
+    }
+    h2{
+    font-size: 40px !important;
+    }
+    .h2Backgrounds{
+    margin-left:20%;
+    margin-right:20%;   
+    }
 }
 @media all and (max-width: 360px) { 
     h1{
     font-size: 45px !important;  
     } 
+    h2{
+    font-size: 35px !important;
+    }
     h5{
     font-size: 14px !important;    
+    }
+    .h2Backgrounds{
+    margin-left:20%;
+    margin-right:20%;   
     }  
 }
 @media all and (max-width: 320px) { 
     h1{
     font-size: 45px !important;  
+    }
+    h2{
+    font-size: 35px !important;
     } 
     h5{
     font-size: 13px !important;    
+    }
+    .h2Backgrounds{
+    margin-left:20%;
+    margin-right:20%;   
     }     
 }

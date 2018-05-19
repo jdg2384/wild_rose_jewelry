@@ -18,7 +18,13 @@ class Footer extends Component {
                 <div id="footer">
                     <Sticky>
                         <footer>
-                            {/* <img src={fish} className="fishFooter img-responsive" alt={'fish'}/>  */}
+                            <div className="container-fluid">
+                                {/* <div className="row "> */}
+                                    <div className="col-md-12">
+                                        {/* <img src={fish} className="fishFooter img-responsive" alt={'fish'}/>  */}
+                                    </div>
+                                {/* </div> */}
+                            </div>
                         </footer>
                     </Sticky>
                 </div>

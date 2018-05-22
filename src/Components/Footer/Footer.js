@@ -9,7 +9,7 @@ import 'bootstrap/dist/css/bootstrap-theme.css';
 import 'font-awesome/css/font-awesome.css';
 import './footer.css';
 //Images
-import fish from '../../Images/fish.svg';
+//import fish from '../../Images/fish.svg';
 class Footer extends Component {
     
     render() {

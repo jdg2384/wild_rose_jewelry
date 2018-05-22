@@ -14,15 +14,11 @@ import hat from '../../Images/hat.svg';
 // Redux Actions
 import {
     projectInfo,
-    toggle
+    onHoverRender,
 } from '../../Actions';
 // Router
 import {
-    BrowserRouter as Router,
-    Route,
     Link,
-    Redirect,
-    withRouter
 } from "react-router-dom";
 
 class Project extends Component {
@@ -33,8 +29,7 @@ class Project extends Component {
     
     renderList=()=>{
         let projectData = this.props.info;
-        let reducerToggle = this.props.reducerToggle
-        if(!projectData || !reducerToggle === null){return <div>Loading...</div>}
+        if(!projectData){return <div>Loading...</div>}
         else{
             return (
                 <div>
@@ -49,9 +44,20 @@ class Project extends Component {
                     <div className="col-md-6 projectBorder text-center curveTwo color">
                         { this.props.info.map(item => {
                             return (
-                                <Link to={`/projectDetail/${item.title}/${item.id}`}>
-                                    <img src={item.image} className="text-center projectImg" alt={'hat Svg'}/>
-                                </Link>
+                                <div
+                                key={item.id}
+                                onMouseEnter={()=> onHoverRender(true)}
+                                onMouseLeave={()=> onHoverRender(false)}
+                                >
+                                    <Link key={item.id} to={`/projectDetail/${item.title}/${item.id}`}>
+                                    {/* {this.onHoverRender()} */}
+                                        <img 
+                                         
+                                        src={item.image} 
+                                        className="text-center projectImg" 
+                                        alt={'hat svg'}/>
+                                    </Link>
+                                </div>
                             )
                         })}
                     </div>
@@ -60,7 +66,6 @@ class Project extends Component {
         }
     }
     render() {
-        //console.log('sticky',Sticky)
         return (
             <div>
                 <div className="container-fluid">
@@ -73,20 +78,16 @@ class Project extends Component {
     }
 }
 const mapStateToProps = state => {
-    let { info, Dateify, Hoist, testOne, testTwo , reducerToggle } = state.projects
-    //console.log(state.projects)
+    console.log('state = ',state.projects.hover)
+    let { info, hover } = state.projects
     return { 
        info,
-       Dateify, 
-       Hoist, 
-       testOne, 
-       testTwo,
-       reducerToggle
+       hover,
     };
 };
 export default connect(mapStateToProps, {
     projectInfo,
-    toggle
+    onHoverRender
 })(Project);
 
 //(event)=> this.props.checkListPatch(pipeDriveApiOne.id,{'org_person_email': event.target.checked })

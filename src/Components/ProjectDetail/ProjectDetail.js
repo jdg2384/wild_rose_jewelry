@@ -29,7 +29,6 @@ class ProjectDetail extends Component {
         else{
             return(
                 this.props.info.map(item => {
-                    console.log('Props',this.props)
                     if(projectId===item.id){
                         return(
                             <div key={item.id}>
@@ -62,7 +61,7 @@ class ProjectDetail extends Component {
                                                 <i className="fab fa-github-square"></i>
                                             </a>
                                         </div>
-                                        <div className="col-md-6 description">
+                                        <div className="col-md-6 descriptionTwo">
                                         <img src={item.image_two} style={{backgroundImage: "url(" + item.image + ")", height:'100%', width: '100%'}} className="text-center" alt={item.title}/>
                                         </div>    
                                     </div>
@@ -94,7 +93,6 @@ class ProjectDetail extends Component {
 }
 const mapStateToProps = state => {
     let { info } = state.projects
-    //console.log(state.projects)
     return { 
        info,
     };

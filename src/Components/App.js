@@ -1,11 +1,7 @@
 import React, { Component } from 'react';
 // Router
 import {
-    BrowserRouter as Router,
     Route,
-    Link,
-    Redirect,
-    withRouter
 } from "react-router-dom";
 import './App.css';
 import Body from './Body/Body.js';

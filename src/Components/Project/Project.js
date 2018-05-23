@@ -56,6 +56,7 @@ class Project extends Component {
                                             <div className="projectImg"
                                                 style={{backgroundImage: "url(" + item.image + ")"}}
                                             >
+                                            {/* <button className="btn btn-primary"><h5>Learn More</h5></button>     */}
                                             </div>
                                         </div>
                                     </Link>
@@ -91,5 +92,3 @@ export default connect(mapStateToProps, {
     projectInfo,
     onHoverRender
 })(Project);
-
-//(event)=> this.props.checkListPatch(pipeDriveApiOne.id,{'org_person_email': event.target.checked })

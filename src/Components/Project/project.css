@@ -53,10 +53,24 @@ border-color: #fff;
 height: 65vh;
 width: 100%;
 }
-/* .zoom{
-transform: scale(1.5)
-} */
+.projectImgParent:hover button {
+padding: 10px 35px 10px 35px;
+border: 4px solid;
+border-radius: 0px !important;
+border-color: #fff; 
+background-color: #20202000 !important;    
+display: block;
+color:#fff;
+}
+.projectImgParent button {
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+}
+/* .projectImgParent button.btn {
+margin-left:245px;
 
+} */
 
 
 /* Media */

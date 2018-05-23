@@ -3,25 +3,39 @@ width: 100vw;
 }
 .description{
 height: 65vh;
-background-color: #202020;
+background-color: #585858;
 padding: 40px;
-margin-bottom: 15px;
+margin-bottom: 10px;
+border-right: 5px solid;
+border-left: 10px solid;
+border-color: #fff;
 }
 .descriptionTwo{
 height: 65vh;
-background-color: #fff;
-padding: 40px;
-margin-bottom: 15px;
+background-color:#fff;
+margin-bottom: 10px;
+width:50%;
+overflow: hidden;
+position: relative;
+border-right: 10px solid;
+border-left: 5px solid;
+border-color: #fff;
 }
 .gitHubBack{
 height: 65vh;
-background-color: #00C2CB;
+background-color: #202020;
 padding: 40px;
-margin-bottom: 15px;
+margin-bottom: 5px;
+border-right: 5px solid;
+border-left: 10px solid;
+border-color: #fff;
 }
 .bullets{
 height: 65vh;
 padding: 40px;
+border-left: 5px solid;
+border-right: 10px solid;
+border-color: #fff;
 background-color: #ECE9E1;    
 }
 .fab{
@@ -32,4 +46,8 @@ text-decoration: none !important;
 .noPadding{
 padding-left: 0px !important;
 padding-right: 0px !important;
+}
+.littlePadding{
+padding-left: 10px !important;
+padding-right: 10px !important;    
 }

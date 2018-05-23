@@ -29,6 +29,7 @@ class ProjectDetail extends Component {
         else{
             return(
                 this.props.info.map(item => {
+                    console.log(item)
                     if(projectId===item.id){
                         return(
                             <div key={item.id}>
@@ -37,7 +38,7 @@ class ProjectDetail extends Component {
                                         <div className="col-md-12 noPadding">
                                             <img src={item.image} style={{backgroundImage: "url(" + item.image + ")", height:'100vh', width: '100%'}} className="text-center" alt={item.title}/>
                                         </div>
-                                        <div className="col-md-12 ">
+                                        <div className="col-md-12 title littlePadding">
                                             <h1>{item.title}</h1>
                                         </div>
                                     </div>
@@ -61,8 +62,10 @@ class ProjectDetail extends Component {
                                                 <i className="fab fa-github-square"></i>
                                             </a>
                                         </div>
-                                        <div className="col-md-6 descriptionTwo">
-                                        <img src={item.image_two} style={{backgroundImage: "url(" + item.image + ")", height:'100%', width: '100%'}} className="text-center" alt={item.title}/>
+                                        <div className="col-md-6 descriptionTwo"
+                                        style={{backgroundImage: "url(" + item.image + ")", height:'65vh', width:'50vw',}}
+                                        >
+                                        
                                         </div>    
                                     </div>
                                 </div>

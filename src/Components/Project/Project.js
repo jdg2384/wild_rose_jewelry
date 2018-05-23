@@ -25,6 +25,7 @@ class Project extends Component {
 
     componentDidMount() {
         this.props.projectInfo()
+        this.props.onHoverRender()
     }
     
     renderList=()=>{
@@ -45,17 +46,18 @@ class Project extends Component {
                         { this.props.info.map(item => {
                             return (
                                 <div
+                                className="projectLink"
                                 key={item.id}
                                 onMouseEnter={()=> onHoverRender(true)}
                                 onMouseLeave={()=> onHoverRender(false)}
                                 >
                                     <Link key={item.id} to={`/projectDetail/${item.title}/${item.id}`}>
-                                    {/* {this.onHoverRender()} */}
-                                        <img 
-                                         
-                                        src={item.image} 
-                                        className="text-center projectImg" 
-                                        alt={'hat svg'}/>
+                                        <div className="projectImgParent">
+                                            <div className="projectImg"
+                                                style={{backgroundImage: "url(" + item.image + ")"}}
+                                            >
+                                            </div>
+                                        </div>
                                     </Link>
                                 </div>
                             )

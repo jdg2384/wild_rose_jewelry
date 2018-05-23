@@ -23,6 +23,26 @@ border-right: 10px solid;
 border-left: 5px solid;
 border-color: #fff;
 }
+.projectImgParent{
+border-bottom: 10px solid;
+border-color: #fff;
+height: 65vh;
+width: 100%;
+overflow: hidden;
+}
+.projectImg{
+width: 100%;
+height: 100%;
+background-color: black; /* fallback color */
+background-position: center;
+background-size: cover;
+}
+.projectImgParent:hover .projectImg,
+.projectImgParent:focus .projectImg {
+    transition: all 2.5s cubic-bezier(0,0,1,1);
+    transform: scale(1.1);
+    filter: contrast(200%);
+}
 .color{
 padding-right: 0px !important;
 padding-left: 0px !important;

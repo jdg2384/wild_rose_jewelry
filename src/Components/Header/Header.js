@@ -15,7 +15,7 @@ class Header extends Component {
                 <div id="header" className="header">
                     <div className="container-fluid">
                         <div className="row">
-                            <div className="col-md-6 grad text-center">
+                            <div className="col-md-12 grad text-center">
                                 <div className="divMiddle">
                                     <img src={River} className="River text-center img-responsive" alt={'River'}/> 
                                     <h1 className="fontBackG">Joseph</h1>
@@ -23,7 +23,7 @@ class Header extends Component {
                                     <h1 className="fontBackG">Grounds</h1>  
                                 </div> 
                             </div>
-                            <div className="col-md-6"></div>
+                            {/* <div className="col-md-6"></div> */}
                         </div>
                     </div>
                 </div>

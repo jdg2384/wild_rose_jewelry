@@ -62,15 +62,15 @@ background-color: #20202000 !important;
 display: block;
 color:#fff;
 }
-.projectImgParent button {
+.projectImgParent button { 
 position: absolute;
 top: 50%;
 transform: translateY(-50%);
 }
-/* .projectImgParent button.btn {
+/* .projectImgParent button {
 margin-left:245px;
 
-} */
+}  */
 
 
 /* Media */

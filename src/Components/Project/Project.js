@@ -45,12 +45,7 @@ class Project extends Component {
                     <div className="col-md-6 projectBorder text-center curveTwo color">
                         { this.props.info.map(item => {
                             return (
-                                <div
-                                className="projectLink"
-                                key={item.id}
-                                onMouseEnter={()=> onHoverRender(true)}
-                                onMouseLeave={()=> onHoverRender(false)}
-                                >
+                                <div className="projectLink" key={item.id}>
                                     <Link key={item.id} to={`/projectDetail/${item.title}/${item.id}`}>
                                         <div className="projectImgParent">
                                             <div className="projectImg"

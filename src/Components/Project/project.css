@@ -48,8 +48,6 @@ padding-right: 0px !important;
 padding-left: 0px !important;
 }
 .logo{
-/* margin-top: 200px;
-margin-bottom: 20px; */
 width: 28%;
 }
 .projectImg{
@@ -66,7 +64,7 @@ color:#fff;
 .projectImgParent img { 
 display: none;
 position: absolute;
-margin-left:230px;
+margin-left:36%;
 top: 50%;
 transform: translateY(-50%);
 }
@@ -105,15 +103,33 @@ color:#fff;
 
 }
 @media all and (max-width: 480px) { 
-    
+    .logo{
+    width: 58%;
+    }
+    .projectImgParent img { 
+    margin-left:22%;
+    top: 50%;
+    transform: translateY(-50%);
+    }        
 }
 @media all and (max-width: 360px) { 
     .green{
         position: absolute;
     }
+    .logo{
+    width: 58%;
+    margin-left:auto;
+    margin-right:auto;
+    }
+    .projectImgParent img { 
+    margin-left:230px;
+    top: 50%;
+    transform: translateY(-50%);
+    }  
 }
 @media all and (max-width: 320px) { 
     .green{
         position: absolute;
     }  
 }
+

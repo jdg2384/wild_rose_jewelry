@@ -63,9 +63,8 @@ class ProjectDetail extends Component {
                                             </a>
                                         </div>
                                         <div className="col-md-6 descriptionTwo"
-                                        style={{backgroundImage: "url(" + item.image + ")", height:'65vh'}}
+                                        style={{backgroundImage: "url(" + item.image + ")"}}
                                         >
-                                        
                                         </div>    
                                     </div>
                                 </div>

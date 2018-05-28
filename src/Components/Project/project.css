@@ -50,7 +50,7 @@ padding-left: 0px !important;
 .logo{
 /* margin-top: 200px;
 margin-bottom: 20px; */
-width: 33%;
+width: 28%;
 }
 .projectImg{
 border-bottom: 10px solid;
@@ -70,7 +70,15 @@ margin-left:230px;
 top: 50%;
 transform: translateY(-50%);
 }
-
+.projectImgParent:hover h2 {   
+display: block;
+color:#fff;
+margin:300px;
+transform: translateY(-50%);
+}
+.projectImgParent h2 { 
+display: none;
+}
 
 /* .projectImgParent:hover img {
 padding: 10px 35px 10px 35px;

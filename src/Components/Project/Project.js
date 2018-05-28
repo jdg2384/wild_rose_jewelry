@@ -51,8 +51,8 @@ class Project extends Component {
                                             <div className="projectImg"
                                                 style={{backgroundImage: "url(" + item.image + ")"}}
                                             >
-                                            {/* <button className="btn btn-primary"><h5>Learn More</h5></button>   */}
-                                            <img src={item.image_two} className=" text-center logo" alt={item.title} />  
+                                            <img src={item.image_two} className=" text-center logo" alt={item.title} />
+                                            {/* <h2>{item.title}</h2>   */}
                                             </div>
                                         </div>
                                     </Link>

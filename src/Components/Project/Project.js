@@ -52,7 +52,7 @@ class Project extends Component {
                                                 style={{backgroundImage: "url(" + item.image + ")"}}
                                             >
                                             {/* <button className="btn btn-primary"><h5>Learn More</h5></button>   */}
-                                            <img src={item.image} className=" text-center hat" alt={'hat Svg'} />  
+                                            <img src={item.image_two} className=" text-center logo" alt={item.title} />  
                                             </div>
                                         </div>
                                     </Link>

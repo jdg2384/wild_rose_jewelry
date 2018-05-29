@@ -32,19 +32,20 @@ class About extends Component {
                             <img src={me} className="me img-responsive" alt={'me'}/>
                             <h3>Joseph Grounds</h3>
                             <h4 className="text-left">
-                                Software Engineer living in Boulder, Colorado. Huge music lover, 
-                                can't get enough Folk, Bluegrass, and Rock!! I love backpacking 
-                                especially if there is a fly rod attached to it. Spending time in 
-                                or near a river is where I feel most centered. If you have never 
-                                been tubing is suggest you get on that. Digital Artwork and illustrations 
-                                were my gateway to the creative industry, which led me to Galvanize and the 
-                                digital world.
+                                I am a Software Engineer living in Boulder, Colorado. Huge music lover, 
+                                can't get enough Folk, Bluegrass, and Rock!! I love backpacking especially 
+                                if there is a fly rod attached to it. Spending time in or near a river is 
+                                where I feel most centered. If you have never been tubing is suggest you 
+                                get on that. Digital Artwork and illustrations were my gateway to the 
+                                creative industry, which led me to Galvanize and the programming world.
                             </h4>
                             <img src={reel} className="reel img-responsive" alt={'reel'}/>
                             <h3>Full Stack Developer</h3>
-                            <h4 className="text-left">A user-centered mindset and sensitivity for design turned out to be the perfect 
-                                fit when collaborating with agencies, clients and brands to develop digital concepts and solve problems together. 
-                                This rough framework outlines my process of developing digital experiences:
+                            <h4 className="text-left">
+                                A user-centered mindset and sensitivity for design turned out to be the 
+                                perfect fit when collaborating with agencies, clients, and brands to 
+                                develop digital concepts and solve problems together. This rough framework 
+                                outlines my process of developing digital experiences.
                             </h4>
                             <img src={fly} className="fly img-responsive" alt={'fly'}/>
                             <h3>Languages | Frameworks | Libraries</h3>

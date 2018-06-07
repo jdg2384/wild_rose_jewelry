@@ -35,7 +35,7 @@ class About extends Component {
                                 I am a Software Engineer living in Boulder, Colorado. Huge music lover, 
                                 can't get enough Folk, Bluegrass, and Rock!! I love backpacking especially 
                                 if there is a fly rod attached to it. Spending time in or near a river is 
-                                where I feel most centered. If you have never been tubing is suggest you 
+                                where I feel most centered. If you have never been tubing I suggest you 
                                 get on that. Digital Artwork and illustrations were my gateway to the 
                                 creative industry, which led me to Galvanize and the programming world.
                             </h4>

@@ -22,11 +22,11 @@ class Header extends Component {
                                     <h2 className="">Coming Soon!</h2> 
                                     <ul className="list-inline middleDiv">
                                         <li>
-                                            <a target='blank' href="https://github.com/jdg2384">
-                                                <i style={{fontSize: 55,}} className="fab fa-github-square"></i>
+                                            <a target='blank' href="mailto:kgrounds39@.com">
+                                                <i style={{fontSize: 55,}} className="fab fa fa-envelope"></i>
                                             </a>
                                         </li>
-                                        <li>
+                                        {/* <li>
                                             <a target='blank' href="https://www.facebook.com/joseph.grounds.3">
                                                 <i style={{fontSize: 55,}} className="fab fa-facebook-square"></i>
                                             </a>
@@ -35,7 +35,7 @@ class Header extends Component {
                                             <a target='blank' href="https://www.linkedin.com/in/joseph-grounds">
                                                 <i style={{fontSize: 55,}} className="fab fa-linkedin-square"></i>
                                             </a>
-                                        </li>
+                                        </li> */}
                                     </ul> 
                                 </div> 
                             </div>

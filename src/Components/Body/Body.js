@@ -17,9 +17,9 @@ class Body extends Component {
         return (
             <div>
                 <Header/>
-                <About/>
+                {/* <About/>
                 <Project/>
-                <Footer/>
+                <Footer/> */}
             </div>
         );
     }

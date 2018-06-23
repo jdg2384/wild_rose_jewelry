@@ -6,7 +6,7 @@ import 'font-awesome/css/font-awesome.css';
 import './header.css';
 import '../Common/common.css';
 //Image
-import River from '../../Images/headerPic3.png';
+import Flower from '../../Images/logo.png';
 
 class Header extends Component {
     render() {
@@ -17,10 +17,26 @@ class Header extends Component {
                         <div className="row">
                             <div className="col-md-12 grad text-center">
                                 <div className="divMiddle">
-                                    <img src={River} className="River text-center img-responsive" alt={'River'}/> 
-                                    <h1 className="fontBackG">Joseph</h1>
-                                    <br/>
-                                    <h1 className="fontBackG">Grounds</h1>  
+                                    <img src={Flower} className="River text-center img-responsive" alt={'River'}/> 
+                                    <h1 className="">Wild Rose Jewelry</h1> 
+                                    <h2 className="">Coming Soon!</h2> 
+                                    <ul className="list-inline middleDiv">
+                                        <li>
+                                            <a target='blank' href="https://github.com/jdg2384">
+                                                <i style={{fontSize: 55,}} className="fab fa-github-square"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a target='blank' href="https://www.facebook.com/joseph.grounds.3">
+                                                <i style={{fontSize: 55,}} className="fab fa-facebook-square"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a target='blank' href="https://www.linkedin.com/in/joseph-grounds">
+                                                <i style={{fontSize: 55,}} className="fab fa-linkedin-square"></i>
+                                            </a>
+                                        </li>
+                                    </ul> 
                                 </div> 
                             </div>
                             {/* <div className="col-md-6"></div> */}

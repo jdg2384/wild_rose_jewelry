@@ -1,22 +1,18 @@
 .header { 
-background-image: url("../../Images/bg.jpg");
-/* background-color: #202020; */
+background-image: url("https://rebrand.ly/mom_background");
 -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
 background-size: cover;
-/* background-attachment: fixed;
-background-position: center;
-background-repeat: no-repeat; */
 color: #fff;
 }
-.fontBackG{
+/* .fontBackG{
 width: 70%;
 margin-bottom: 20px; 
 background-color: rgba(0, 194, 203, .8);
 margin:auto;
-/* rgba(0, 194, 203, 1)  */
-}
+
+} */
 .divMiddle{
 position: relative;
 top: 50%;

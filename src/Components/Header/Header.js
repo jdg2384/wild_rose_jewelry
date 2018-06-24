@@ -22,7 +22,7 @@ class Header extends Component {
                                     <h2 className="">Coming Soon!</h2> 
                                     <ul className="list-inline middleDiv">
                                         <li>
-                                            <a target='blank' href="mailto:kgrounds39@.com">
+                                            <a target='blank' href="mailto:wildrosejewelers@gmail.com">
                                                 <i style={{fontSize: 55,}} className="fab fa fa-envelope"></i>
                                             </a>
                                         </li>

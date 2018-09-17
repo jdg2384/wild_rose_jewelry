@@ -6,19 +6,19 @@ import Sticky from 'react-sticky-el';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap-theme.css';
 import 'font-awesome/css/font-awesome.css';
-import './about.css';
+// import './about.css';
 import '../Common/common.css';
 //Images
 import hat from '../../Images/hat.png';
 
-class About extends Component {
+class Contact extends Component {
     
     render() {
         return (
             <div>
-                <h1>About</h1>
+                <h1>Contact</h1>
             </div>
         );
     }
 }
-export default About;
+export default Contact;

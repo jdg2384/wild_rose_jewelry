@@ -1,0 +1,30 @@
+.gallery-wrap{
+background-color: #fff;
+box-shadow: 0 3px 6px #0000003b; 
+padding: 25px;
+display: flex;
+margin: 0 auto;
+flex-wrap: wrap;
+width: 80%;
+}
+.card-wrap{
+display: flex;
+width: 23%;
+flex-direction: column;
+margin: 1%; 
+}
+.card-wrap:hover{  
+box-shadow: 0 3px 6px #0000003b;    
+}
+.image-wrap img{
+    height: 250px;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 0px;
+}
+.card-detail-wrap{
+    width: 100%;
+    background-color:rgb(245, 245, 245);
+    margin-top: -10px;
+    padding: 5px 10px;
+}

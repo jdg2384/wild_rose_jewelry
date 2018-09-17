@@ -1,11 +1,13 @@
 import axios from 'axios';
 import {
   PROJECTINFO,
+  PRODUCTGET,
   ONHOVERRENDER,
   TOGGLE
 } from './types';
 //const api = 'http://localhost:3001/api'
 const api = 'https://peaceful-tor-89083.herokuapp.com/api'
+
 export const projectInfo = () => {
     return (dispatch) => {
         axios.get(`${api}`)
@@ -18,23 +20,17 @@ export const projectInfo = () => {
         })
     }
 }
-export const toggle = (prop) => {
-    return (dispatch) => {
-        dispatch({
-            type: TOGGLE,
-            payload: prop,
-        });
-    }
-}
-export const onHoverRender = (blah) => {
-    console.log(blah)
-    return (dispatch) => {
-        dispatch({
-            type: ONHOVERRENDER,
-            payload: blah,
-        });
-    }
-}
 
-  
+export const productGet = (id) => {
+    return (dispatch) => {
+        axios.get(`${api}/${id}`)
+        .then(response => response)
+        .then(data => {
+            dispatch({
+              type: PRODUCTGET,
+              payload: data.data,
+            });
+        })
+    }
+}
 

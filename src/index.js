@@ -7,9 +7,7 @@ import { createStore, applyMiddleware } from 'redux';
 import reducer from './Reducers';
 import ReduxThunk from 'redux-thunk';
 //Router
-import {
-    BrowserRouter as Router,
-} from "react-router-dom";
+
 //CSS
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap-theme.css';
@@ -21,10 +19,9 @@ import registerServiceWorker from './registerServiceWorker';
 const store = createStore(reducer, {}, applyMiddleware(ReduxThunk));
 
 ReactDOM.render(
-    <Router>
-        <Provider store={store}>
+   <Provider store={store}>
             <App />
         </Provider>
-    </Router>
+    
 ,document.getElementById('root'));
 registerServiceWorker();

@@ -6,19 +6,28 @@ import Sticky from 'react-sticky-el';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap-theme.css';
 import 'font-awesome/css/font-awesome.css';
-import './about.css';
+// import './about.css';
 import '../Common/common.css';
 //Images
 import hat from '../../Images/hat.png';
 
-class About extends Component {
-    
+class Footer extends Component {
+
     render() {
         return (
             <div>
-                <h1>About</h1>
+                {/* <div className="container">
+                    <div className="row">
+                        <div className="col-md-6">
+                        joe
+                        </div>
+                        <div className="col-md-6">
+                        joe
+                        </div>
+                    </div>
+                </div> */}
             </div>
         );
     }
 }
-export default About;
+export default Footer;

@@ -8,9 +8,7 @@ import 'font-awesome/css/font-awesome.css';
 import './body.css';
 //Components
 import Header from '../Header/Header';
-import About from '../About/About';
-import Project from '../Project/Project';
-import Footer from '../Footer/Footer';
+
 
 class Body extends Component {
     render() {

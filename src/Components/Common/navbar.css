@@ -1,0 +1,18 @@
+.navbar-default{
+    background-color: aqua !important;
+    border: none;
+}
+.navbar-brand img {
+    width: 30px;
+}
+.gradient{
+margin-top: -20px;
+
+background: rgb(64,169,249); /* Old browsers */
+background: -moz-linear-gradient(left, rgba(64,169,249,1) 0%, rgba(32,114,191,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, rgba(64,169,249,1) 0%,rgba(32,114,191,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, rgba(64,169,249,1) 0%,rgba(32,114,191,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#40a9f9', endColorstr='#2072bf',GradientType=1 ); /* IE6-9 */
+height: 25px;
+width: 100%;
+}
